@@ -305,6 +305,7 @@ const SUPPORTED_EXTENSIONS = new Set([
   ".pages",
   ".key",
   ".numbers",
+  ".epub",
 ]);
 
 program

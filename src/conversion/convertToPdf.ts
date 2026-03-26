@@ -47,6 +47,7 @@ export const officeExtensions = [
   ".rtf",
   ".pages",
   ".key",
+  ".epub",
 ];
 
 export const spreadsheetExtensions = [
