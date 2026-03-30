@@ -233,6 +233,18 @@ describe("test convertToPdf", () => {
     });
   });
 
+  it("convert an ebook (epub)", async () => {
+    mockProc.on.mockImplementation((event, cb) => {
+      if (event === "close") cb(0);
+    });
+    mockProc.stdout.emit("data", "conversion successfull");
+    const result = await convertToPdf("test.epub");
+    expect(result).toStrictEqual({
+      pdfPath: "/tmp/test/test.pdf",
+      originalExtension: ".epub",
+    });
+  });
+
   it("convert an office document (xlsx)", async () => {
     mockProc.on.mockImplementation((event, cb) => {
       if (event === "close") cb(0);

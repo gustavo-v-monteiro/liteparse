@@ -17,6 +17,7 @@ LiteParse's core parsing works on PDFs. This module extends support to 50+ forma
 | Presentations | .ppt, .pptx, .pptm, .pot, .potm, .potx, .odp, .otp, .key |
 | Spreadsheets | .xls, .xlsx, .xlsm, .xlsb, .ods, .ots, .csv, .tsv, .numbers |
 | Images | .jpg, .jpeg, .png, .gif, .bmp, .tiff, .tif, .webp, .svg |
+| eBooks | .epub |
 | Web | .htm, .html, .xhtml (not yet implemented) |
 
 **External Dependencies:**
